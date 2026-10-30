@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "everything_deco:block/light_mud"
+    "all": "everything_deco:block/dark_mud"
   }
 }

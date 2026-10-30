@@ -1,0 +1,82 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "everything_deco:block/small_jungle_log_post"
+      },
+      "when": {
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "everything_deco:block/small_jungle_log_side"
+      },
+      "when": {
+        "north": "low"
+      }
+    },
+    {
+      "apply": {
+        "model": "everything_deco:block/small_jungle_log_side_tall"
+      },
+      "when": {
+        "north": "tall"
+      }
+    },
+    {
+      "apply": {
+        "model": "everything_deco:block/small_jungle_log_side",
+        "y": 90
+      },
+      "when": {
+        "east": "low"
+      }
+    },
+    {
+      "apply": {
+        "model": "everything_deco:block/small_jungle_log_side_tall",
+        "y": 90
+      },
+      "when": {
+        "east": "tall"
+      }
+    },
+    {
+      "apply": {
+        "model": "everything_deco:block/small_jungle_log_side",
+        "y": 180
+      },
+      "when": {
+        "south": "low"
+      }
+    },
+    {
+      "apply": {
+        "model": "everything_deco:block/small_jungle_log_side_tall",
+        "y": 180
+      },
+      "when": {
+        "south": "tall"
+      }
+    },
+    {
+      "apply": {
+        "model": "everything_deco:block/small_jungle_log_side",
+        "y": 270
+      },
+      "when": {
+        "west": "low"
+      }
+    },
+    {
+      "apply": {
+        "model": "everything_deco:block/small_jungle_log_side_tall",
+        "y": 270
+      },
+      "when": {
+        "west": "tall"
+      }
+    }
+  ]
+}

@@ -23,15 +23,31 @@ import java.util.function.Supplier;
 public class EDNaturalBlocks {
     public static final DeferredRegister.Blocks NATURALBLOCK = DeferredRegister.createBlocks(EverythingDeco.MOD_ID);
 
+//    public static final DeferredBlock<Block> LIGHT_MUD = registerBlock(
+//            "light_mud",
+//            () -> new MudBlock(BlockBehaviour.Properties.ofLegacyCopy(Blocks.MUD)
+//                    .mapColor(MapColor.TERRACOTTA_CYAN)
+//                    .isValidSpawn(EDNaturalBlocks::always)
+//                    .isRedstoneConductor(EDNaturalBlocks::always)
+//                    .isViewBlocking(EDNaturalBlocks::always)
+//                    .isSuffocating(EDNaturalBlocks::always)
+//                    .sound(SoundType.MUD)));
+
+//    public static final DeferredBlock<Block> MUD = registerBlock(
+//            "mud",
+//            () -> new MudBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUD)
+//                    .mapColor(MapColor.TERRACOTTA_CYAN)
+//                    .isValidSpawn(EDNaturalBlocks::always)
+//                    .isRedstoneConductor(EDNaturalBlocks::always)
+//                    .isViewBlocking(EDNaturalBlocks::always)
+//                    .isSuffocating(EDNaturalBlocks::always)
+//                    .sound(SoundType.MUD)));
     public static final DeferredBlock<Block> LIGHT_MUD = registerBlock(
             "light_mud",
-            () -> new MudBlock(BlockBehaviour.Properties.ofLegacyCopy(Blocks.MUD)
-                    .mapColor(MapColor.TERRACOTTA_CYAN)
-                    .isValidSpawn(EDNaturalBlocks::always)
-                    .isRedstoneConductor(EDNaturalBlocks::always)
-                    .isViewBlocking(EDNaturalBlocks::always)
-                    .isSuffocating(EDNaturalBlocks::always)
-                    .sound(SoundType.MUD)));
+            () -> new MudBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUD)));
+    public static final DeferredBlock<Block> MUD = registerBlock(
+            "mud",
+            () -> new MudBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUD)));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
@@ -44,12 +60,13 @@ public class EDNaturalBlocks {
         EDModItems.ITEM.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
-    public static boolean always(BlockState state, BlockGetter level, BlockPos pos) {
-        return true;
-    }
-    private static boolean always(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, EntityType<?> entityType) {
-        return true;
-    }
+//    public static boolean always(BlockState state, BlockGetter level, BlockPos pos) {
+//        return true;
+//    }
+
+//    private static boolean always(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, EntityType<?> entityType) {
+//        return true;
+//    }
 
     public static void register(IEventBus eventBus) {
         NATURALBLOCK.register(eventBus);
