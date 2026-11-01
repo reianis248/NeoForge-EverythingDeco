@@ -1,10 +1,7 @@
 package com.degroni.everything_deco.common.datagen.dataprovider;
 
 import com.degroni.everything_deco.EverythingDeco;
-import com.degroni.everything_deco.common.block.EDBuildingBlocks;
-import com.degroni.everything_deco.common.block.EDStoneBlocks;
-import com.degroni.everything_deco.common.block.EDWalls;
-import com.degroni.everything_deco.common.block.EDNaturalBlocks;
+import com.degroni.everything_deco.common.block.*;
 import com.degroni.everything_deco.common.block.helper.EDWallBlock;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -36,10 +33,11 @@ public class EDBlockStateProvider extends BlockStateProvider {
         blockWithItem(EDNaturalBlocks.DEEPSLATE_TIN_ORE);
 
 
-        blockWithItem(EDBuildingBlocks.CUT_IRON);
-        blockWithItem(EDBuildingBlocks.CHISELED_IRON);
-        blockWithItem(EDBuildingBlocks.CUT_TIN);
-        blockWithItem(EDBuildingBlocks.CHISELED_TIN);
+        blockWithItem(EDMetalBlocks.CUT_IRON);
+        blockWithItem(EDMetalBlocks.CHISELED_IRON);
+        blockWithItem(EDMetalBlocks.TIN_BLOCK);
+        blockWithItem(EDMetalBlocks.CUT_TIN);
+        blockWithItem(EDMetalBlocks.CHISELED_TIN);
 
 
         blockWithItem(EDStoneBlocks.RIVERSTONE);

@@ -1,10 +1,7 @@
 package com.degroni.everything_deco.client;
 
 import com.degroni.everything_deco.EverythingDeco;
-import com.degroni.everything_deco.common.block.EDBuildingBlocks;
-import com.degroni.everything_deco.common.block.EDNaturalBlocks;
-import com.degroni.everything_deco.common.block.EDStoneBlocks;
-import com.degroni.everything_deco.common.block.EDWalls;
+import com.degroni.everything_deco.common.block.*;
 import com.degroni.everything_deco.common.item.EDModItems;
 import com.degroni.everything_deco.common.util.EverythingDecoCreativeTabs;
 import de.Roboter007.moderntabs.ModernTabs;
@@ -45,9 +42,15 @@ public class ClientEvents {
             /* Ores and Materials */
             SectionedItems.addItem(oresAndMaterialsSection, EDNaturalBlocks.TIN_ORE);
             SectionedItems.addItem(oresAndMaterialsSection, EDNaturalBlocks.DEEPSLATE_TIN_ORE);
+            SectionedItems.addItem(oresAndMaterialsSection, EDMetalBlocks.TIN_BLOCK);
             SectionedItems.addItem(oresAndMaterialsSection, EDModItems.RAW_TIN);
 
             /* Building Blocks */
+            SectionedItems.addItem(buildingBlocksSection, EDMetalBlocks.CUT_IRON);
+            SectionedItems.addItem(buildingBlocksSection, EDMetalBlocks.CHISELED_IRON);
+            SectionedItems.addItem(buildingBlocksSection, EDMetalBlocks.CUT_TIN);
+            SectionedItems.addItem(buildingBlocksSection, EDMetalBlocks.CHISELED_TIN);
+
             SectionedItems.addItem(buildingBlocksSection, EDBuildingBlocks.RIVERSTONE_STAIRS);
             SectionedItems.addItem(buildingBlocksSection, EDBuildingBlocks.RIVERSTONE_SLAB);
             SectionedItems.addItem(buildingBlocksSection, EDWalls.RIVERSTONE_WALL);

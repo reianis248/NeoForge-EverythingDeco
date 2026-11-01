@@ -1,10 +1,7 @@
 package com.degroni.everything_deco.common.util;
 
 import com.degroni.everything_deco.EverythingDeco;
-import com.degroni.everything_deco.common.block.EDBuildingBlocks;
-import com.degroni.everything_deco.common.block.EDStoneBlocks;
-import com.degroni.everything_deco.common.block.EDWalls;
-import com.degroni.everything_deco.common.block.EDNaturalBlocks;
+import com.degroni.everything_deco.common.block.*;
 import com.degroni.everything_deco.common.item.EDModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -48,6 +45,11 @@ public class EverythingDecoCreativeTabs {
                         output.accept(EDNaturalBlocks.DEEPSLATE_TIN_ORE.get());
 
                         /* BLOCKS */
+                        output.accept(EDMetalBlocks.CUT_IRON.get());
+                        output.accept(EDMetalBlocks.CHISELED_IRON.get());
+                        output.accept(EDMetalBlocks.CUT_TIN.get());
+                        output.accept(EDMetalBlocks.CHISELED_TIN.get());
+
                         output.accept(EDStoneBlocks.RIVERSTONE.get());
                         output.accept(EDBuildingBlocks.RIVERSTONE_STAIRS.get());
                         output.accept(EDBuildingBlocks.RIVERSTONE_SLAB.get());

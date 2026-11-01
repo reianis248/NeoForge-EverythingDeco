@@ -1,9 +1,6 @@
 package com.degroni.everything_deco;
 
-import com.degroni.everything_deco.common.block.EDBuildingBlocks;
-import com.degroni.everything_deco.common.block.EDStoneBlocks;
-import com.degroni.everything_deco.common.block.EDWalls;
-import com.degroni.everything_deco.common.block.EDNaturalBlocks;
+import com.degroni.everything_deco.common.block.*;
 import com.degroni.everything_deco.common.item.EDModItems;
 import com.degroni.everything_deco.common.util.EverythingDecoCreativeTabs;
 import org.slf4j.Logger;
@@ -48,6 +45,7 @@ public class EverythingDeco {
         EDWalls.register(modEventBus);
         EDStoneBlocks.register(modEventBus);
         EDBuildingBlocks.register(modEventBus);
+        EDMetalBlocks.register(modEventBus);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {

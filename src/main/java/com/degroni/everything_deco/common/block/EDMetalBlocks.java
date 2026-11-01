@@ -5,9 +5,7 @@ import com.degroni.everything_deco.common.item.EDModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
@@ -18,9 +16,9 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import java.util.function.Supplier;
 
 public class EDMetalBlocks {
-    public static final DeferredRegister.Blocks BUILDINGBLOCK = DeferredRegister.createBlocks(EverythingDeco.MOD_ID);
+    public static final DeferredRegister.Blocks METALBLOCK = DeferredRegister.createBlocks(EverythingDeco.MOD_ID);
 
-    public static final DeferredBlock<Block> CUT_IRON = registerBuildingBlock(
+    public static final DeferredBlock<Block> CUT_IRON = registerMetalBlock(
             "cut_iron",
             () -> new Block(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.METAL)
@@ -28,7 +26,7 @@ public class EDMetalBlocks {
                     .requiresCorrectToolForDrops()
                     .strength(5.0F, 6.0F)
                     .sound(SoundType.METAL)));
-    public static final DeferredBlock<Block> CHISELED_IRON = registerBuildingBlock(
+    public static final DeferredBlock<Block> CHISELED_IRON = registerMetalBlock(
             "chiseled_iron",
             () -> new Block(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.METAL)
@@ -37,7 +35,15 @@ public class EDMetalBlocks {
                     .strength(5.0F, 6.0F)
                     .sound(SoundType.METAL)));
 
-    public static final DeferredBlock<Block> CUT_TIN = registerBuildingBlock(
+    public static final DeferredBlock<Block> TIN_BLOCK = registerMetalBlock(
+            "tin_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.METAL)
+                    .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                    .requiresCorrectToolForDrops()
+                    .strength(5.0F, 6.0F)
+                    .sound(SoundType.METAL)));
+    public static final DeferredBlock<Block> CUT_TIN = registerMetalBlock(
             "cut_tin",
             () -> new Block(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.METAL)
@@ -45,7 +51,7 @@ public class EDMetalBlocks {
                     .requiresCorrectToolForDrops()
                     .strength(5.0F, 6.0F)
                     .sound(SoundType.METAL)));
-    public static final DeferredBlock<Block> CHISELED_TIN = registerBuildingBlock(
+    public static final DeferredBlock<Block> CHISELED_TIN = registerMetalBlock(
             "chiseled_tin",
             () -> new Block(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.METAL)
@@ -65,8 +71,8 @@ public class EDMetalBlocks {
                 .strength(0.75F);
     }
 
-    private static <T extends Block> DeferredBlock<T> registerBuildingBlock(String name, Supplier<T> block) {
-            DeferredBlock<T> toReturn = BUILDINGBLOCK.register(name, block);
+    private static <T extends Block> DeferredBlock<T> registerMetalBlock(String name, Supplier<T> block) {
+            DeferredBlock<T> toReturn = METALBLOCK.register(name, block);
             registerBlockItem(name, toReturn);
             return toReturn;
     }
@@ -76,6 +82,6 @@ public class EDMetalBlocks {
     }
 
     public static void register(IEventBus eventBus) {
-        BUILDINGBLOCK.register(eventBus);
+        METALBLOCK.register(eventBus);
     }
 }

@@ -1,10 +1,7 @@
 package com.degroni.everything_deco.common.datagen.dataprovider;
 
 import com.degroni.everything_deco.EverythingDeco;
-import com.degroni.everything_deco.common.block.EDBuildingBlocks;
-import com.degroni.everything_deco.common.block.EDNaturalBlocks;
-import com.degroni.everything_deco.common.block.EDStoneBlocks;
-import com.degroni.everything_deco.common.block.EDWalls;
+import com.degroni.everything_deco.common.block.*;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -82,10 +79,14 @@ public class EDBlockTagProvider extends BlockTagsProvider {
                 .add(EDNaturalBlocks.DEEPSLATE_TIN_ORE.get());
 
         tag(BlockTags.NEEDS_STONE_TOOL)
+                .add(EDMetalBlocks.CUT_IRON.get())
+                .add(EDMetalBlocks.CHISELED_IRON.get());
+        tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(EDNaturalBlocks.TIN_ORE.get())
                 .add(EDNaturalBlocks.DEEPSLATE_TIN_ORE.get())
-                .add(EDBuildingBlocks.CUT_IRON.get())
-                .add(EDBuildingBlocks.CHISELED_IRON.get());
+                .add(EDMetalBlocks.TIN_BLOCK.get())
+                .add(EDMetalBlocks.CUT_TIN.get())
+                .add(EDMetalBlocks.CHISELED_TIN.get());
 
         tag(BlockTags.WALLS)
                 .add(EDWalls.SMALL_OAK_LOG.get())

@@ -1,10 +1,7 @@
 package com.degroni.everything_deco.common.datagen.dataprovider.lang;
 
 import com.degroni.everything_deco.EverythingDeco;
-import com.degroni.everything_deco.common.block.EDBuildingBlocks;
-import com.degroni.everything_deco.common.block.EDStoneBlocks;
-import com.degroni.everything_deco.common.block.EDWalls;
-import com.degroni.everything_deco.common.block.EDNaturalBlocks;
+import com.degroni.everything_deco.common.block.*;
 import com.degroni.everything_deco.common.item.EDModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Blocks;
@@ -51,10 +48,11 @@ public class EDLanguageProviderEnglish extends LanguageProvider {
         add(EDWalls.STRIPPED_SMALL_CHERRY_LOG.get(), "Stripped Small Cherry Log");
         add(EDWalls.SMALL_CACTUS.get(), "Small Cactus");
 
-        add(EDBuildingBlocks.CUT_IRON.get(), "Cut Iron");
-        add(EDBuildingBlocks.CHISELED_IRON.get(), "Chiseled Iron");
-        add(EDBuildingBlocks.CUT_TIN.get(), "Cut Tin");
-        add(EDBuildingBlocks.CHISELED_TIN.get(), "Chiseled Tin");
+        add(EDMetalBlocks.CUT_IRON.get(), "Cut Iron");
+        add(EDMetalBlocks.CHISELED_IRON.get(), "Chiseled Iron");
+        add(EDMetalBlocks.TIN_BLOCK.get(), "Tin Block");
+        add(EDMetalBlocks.CUT_TIN.get(), "Cut Tin");
+        add(EDMetalBlocks.CHISELED_TIN.get(), "Chiseled Tin");
 
         add(EDStoneBlocks.RIVERSTONE.get(), "Riverstone");
         add(EDBuildingBlocks.RIVERSTONE_STAIRS.get(), "Riverstone Stairs");

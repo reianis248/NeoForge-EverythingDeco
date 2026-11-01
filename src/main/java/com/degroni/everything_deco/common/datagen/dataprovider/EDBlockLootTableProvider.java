@@ -1,9 +1,6 @@
 package com.degroni.everything_deco.common.datagen.dataprovider;
 
-import com.degroni.everything_deco.common.block.EDBuildingBlocks;
-import com.degroni.everything_deco.common.block.EDStoneBlocks;
-import com.degroni.everything_deco.common.block.EDWalls;
-import com.degroni.everything_deco.common.block.EDNaturalBlocks;
+import com.degroni.everything_deco.common.block.*;
 import com.degroni.everything_deco.common.item.EDModItems;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
@@ -83,10 +80,11 @@ public class EDBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(EDWalls.SMALL_CACTUS.get());
 
 
-        dropSelf(EDBuildingBlocks.CUT_IRON.get());
-        dropSelf(EDBuildingBlocks.CHISELED_IRON.get());
-        dropSelf(EDBuildingBlocks.CUT_TIN.get());
-        dropSelf(EDBuildingBlocks.CHISELED_TIN.get());
+        dropSelf(EDMetalBlocks.CUT_IRON.get());
+        dropSelf(EDMetalBlocks.CHISELED_IRON.get());
+        dropSelf(EDMetalBlocks.TIN_BLOCK.get());
+        dropSelf(EDMetalBlocks.CUT_TIN.get());
+        dropSelf(EDMetalBlocks.CHISELED_TIN.get());
 
 
         dropSelf(EDStoneBlocks.RIVERSTONE.get());
@@ -111,7 +109,8 @@ public class EDBlockLootTableProvider extends BlockLootSubProvider {
                 EDNaturalBlocks.NATURALBLOCK,
                 EDWalls.WALL,
                 EDStoneBlocks.STONE,
-                EDBuildingBlocks.BUILDINGBLOCK
+                EDBuildingBlocks.BUILDINGBLOCK,
+                EDMetalBlocks.METALBLOCK
                 )
                 .flatMap(deferredRegister -> deferredRegister.getEntries().stream())
                 .map(Holder::value)
