@@ -1,6 +1,8 @@
 package com.degroni.everything_deco.client;
 
 import com.degroni.everything_deco.EverythingDeco;
+import com.degroni.everything_deco.common.util.EverythingDecoCreativeTabs;
+import de.Roboter007.moderntabs.ModernTabs;
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -28,5 +30,11 @@ public class EverythingDecoClient {
         // Some client setup code
         EverythingDeco.LOGGER.info("HELLO FROM CLIENT SETUP");
         EverythingDeco.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+        event.enqueueWork(() -> {
+            ModernTabs.TabDesign tabDesign = new ModernTabs.TabDesign()
+                    .sectionsEnabled(true);
+
+            ModernTabs.configureTab(EverythingDecoCreativeTabs.EVERYTHING_DECO.get(), tabDesign);
+        });
     }
 }

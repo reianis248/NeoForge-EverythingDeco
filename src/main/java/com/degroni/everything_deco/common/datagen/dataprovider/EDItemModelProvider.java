@@ -2,6 +2,10 @@ package com.degroni.everything_deco.common.datagen.dataprovider;
 
 import com.degroni.everything_deco.EverythingDeco;
 import com.degroni.everything_deco.common.block.EDBuildingBlocks;
+import com.degroni.everything_deco.common.block.EDNaturalBlocks;
+import com.degroni.everything_deco.common.block.EDStoneBlocks;
+import com.degroni.everything_deco.common.block.EDWalls;
+import com.degroni.everything_deco.common.item.EDModItems;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -19,26 +23,43 @@ public class EDItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        vanillaTextureWallItem(EDBuildingBlocks.SMALL_OAK_LOG, Blocks.OAK_LOG);
-        vanillaTextureWallItem(EDBuildingBlocks.SMALL_SPRUCE_LOG, Blocks.SPRUCE_LOG);
-        vanillaTextureWallItem(EDBuildingBlocks.SMALL_BIRCH_LOG, Blocks.BIRCH_LOG);
-        vanillaTextureWallItem(EDBuildingBlocks.SMALL_JUNGLE_LOG, Blocks.JUNGLE_LOG);
-        vanillaTextureWallItem(EDBuildingBlocks.SMALL_ACACIA_LOG, Blocks.ACACIA_LOG);
-        vanillaTextureWallItem(EDBuildingBlocks.SMALL_DARK_OAK_LOG, Blocks.DARK_OAK_LOG);
-        vanillaTextureWallItem(EDBuildingBlocks.SMALL_MANGROVE_LOG, Blocks.MANGROVE_LOG);
-        vanillaTextureWallItem(EDBuildingBlocks.SMALL_CHERRY_LOG, Blocks.CHERRY_LOG);
-        vanillaTextureWallItem(EDBuildingBlocks.SMALL_CACTUS, Blocks.CACTUS);
+        vanillaTextureWallItem(EDWalls.SMALL_OAK_LOG, Blocks.OAK_LOG);
+        vanillaTextureWallItem(EDWalls.SMALL_SPRUCE_LOG, Blocks.SPRUCE_LOG);
+        vanillaTextureWallItem(EDWalls.SMALL_BIRCH_LOG, Blocks.BIRCH_LOG);
+        vanillaTextureWallItem(EDWalls.SMALL_JUNGLE_LOG, Blocks.JUNGLE_LOG);
+        vanillaTextureWallItem(EDWalls.SMALL_ACACIA_LOG, Blocks.ACACIA_LOG);
+        vanillaTextureWallItem(EDWalls.SMALL_DARK_OAK_LOG, Blocks.DARK_OAK_LOG);
+        vanillaTextureWallItem(EDWalls.SMALL_MANGROVE_LOG, Blocks.MANGROVE_LOG);
+        vanillaTextureWallItem(EDWalls.SMALL_CHERRY_LOG, Blocks.CHERRY_LOG);
+        vanillaTextureWallItem(EDWalls.SMALL_CACTUS, Blocks.CACTUS);
 
-        vanillaTextureWallItem(EDBuildingBlocks.STRIPPED_SMALL_OAK_LOG, Blocks.STRIPPED_OAK_LOG);
-        vanillaTextureWallItem(EDBuildingBlocks.STRIPPED_SMALL_SPRUCE_LOG, Blocks.STRIPPED_SPRUCE_LOG);
-        vanillaTextureWallItem(EDBuildingBlocks.STRIPPED_SMALL_BIRCH_LOG, Blocks.STRIPPED_BIRCH_LOG);
-        vanillaTextureWallItem(EDBuildingBlocks.STRIPPED_SMALL_JUNGLE_LOG, Blocks.STRIPPED_JUNGLE_LOG);
-        vanillaTextureWallItem(EDBuildingBlocks.STRIPPED_SMALL_ACACIA_LOG, Blocks.STRIPPED_ACACIA_LOG);
-        vanillaTextureWallItem(EDBuildingBlocks.STRIPPED_SMALL_DARK_OAK_LOG, Blocks.STRIPPED_DARK_OAK_LOG);
-        vanillaTextureWallItem(EDBuildingBlocks.STRIPPED_SMALL_MANGROVE_LOG, Blocks.STRIPPED_MANGROVE_LOG);
-        vanillaTextureWallItem(EDBuildingBlocks.STRIPPED_SMALL_CHERRY_LOG, Blocks.STRIPPED_CHERRY_LOG);
+        vanillaTextureWallItem(EDWalls.STRIPPED_SMALL_OAK_LOG, Blocks.STRIPPED_OAK_LOG);
+        vanillaTextureWallItem(EDWalls.STRIPPED_SMALL_SPRUCE_LOG, Blocks.STRIPPED_SPRUCE_LOG);
+        vanillaTextureWallItem(EDWalls.STRIPPED_SMALL_BIRCH_LOG, Blocks.STRIPPED_BIRCH_LOG);
+        vanillaTextureWallItem(EDWalls.STRIPPED_SMALL_JUNGLE_LOG, Blocks.STRIPPED_JUNGLE_LOG);
+        vanillaTextureWallItem(EDWalls.STRIPPED_SMALL_ACACIA_LOG, Blocks.STRIPPED_ACACIA_LOG);
+        vanillaTextureWallItem(EDWalls.STRIPPED_SMALL_DARK_OAK_LOG, Blocks.STRIPPED_DARK_OAK_LOG);
+        vanillaTextureWallItem(EDWalls.STRIPPED_SMALL_MANGROVE_LOG, Blocks.STRIPPED_MANGROVE_LOG);
+        vanillaTextureWallItem(EDWalls.STRIPPED_SMALL_CHERRY_LOG, Blocks.STRIPPED_CHERRY_LOG);
 
-//        basicItem(CampedFood.BEAR.get());
+        wallItem(EDWalls.RIVERSTONE_WALL, EDStoneBlocks.RIVERSTONE);
+        wallItem(EDWalls.DARK_RIVERSTONE_WALL, EDStoneBlocks.DARK_RIVERSTONE);
+        wallItem(EDWalls.WETSTONE_WALL, EDStoneBlocks.WETSTONE);
+
+        basicItem(EDModItems.BRONZE_DOOR.get());
+        basicItem(EDModItems.WHITE_SALT.get());
+        basicItem(EDModItems.PINK_SALT.get());
+        basicItem(EDModItems.RAW_TIN.get());
+        basicItem(EDModItems.TIN_INGOT.get());
+        basicItem(EDModItems.CAST_IRON_INGOT.get());
+        basicItem(EDModItems.STEEL_INGOT.get());
+        basicItem(EDModItems.BRONZE_INGOT.get());
+        basicItem(EDModItems.SINISTEEL_INGOT.get());
+        basicItem(EDModItems.COPPER_SHEET.get());
+        basicItem(EDModItems.GOLD_SHEET.get());
+        basicItem(EDModItems.IRON_SHEET.get());
+
+        simpleBlockItem(EDNaturalBlocks.BLANCHED_NYLIUM.get());
     }
 
     private ItemModelBuilder saplingItem(DeferredBlock<Block> item) {

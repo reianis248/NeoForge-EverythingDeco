@@ -1,0 +1,18 @@
+{
+  "values": [
+    "everything_deco:riverstone",
+    "everything_deco:riverstone_stairs",
+    "everything_deco:riverstone_slab",
+    "everything_deco:riverstone_wall",
+    "everything_deco:dark_riverstone",
+    "everything_deco:dark_riverstone_stairs",
+    "everything_deco:dark_riverstone_slab",
+    "everything_deco:dark_riverstone_wall",
+    "everything_deco:wetstone",
+    "everything_deco:wetstone_stairs",
+    "everything_deco:wetstone_slab",
+    "everything_deco:wetstone_wall",
+    "everything_deco:tin_ore",
+    "everything_deco:deepslate_tin_ore"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "everything_deco:block/dark_riverstone_slab"
+    },
+    "type=double": {
+      "model": "everything_deco:block/dark_riverstone"
+    },
+    "type=top": {
+      "model": "everything_deco:block/dark_riverstone_slab_top"
+    }
+  }
+}

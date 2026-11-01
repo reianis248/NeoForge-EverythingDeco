@@ -1,6 +1,6 @@
 package com.degroni.everything_deco.common.block.helper;
 
-import com.degroni.everything_deco.common.block.EDBuildingBlocks;
+import com.degroni.everything_deco.common.block.EDWalls;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableMap.Builder;
 import com.mojang.serialization.MapCodec;
@@ -343,29 +343,29 @@ public class EDWallBlock extends Block implements SimpleWaterloggedBlock {
     public @Nullable BlockState getToolModifiedState(BlockState state, UseOnContext context,
                                                      ItemAbility itemAbility, boolean simulate) {
         if(context.getItemInHand().getItem() instanceof AxeItem) {
-            if(state.is(EDBuildingBlocks.SMALL_OAK_LOG)) {
-                return EDBuildingBlocks.STRIPPED_SMALL_OAK_LOG.get().defaultBlockState();
+            if(state.is(EDWalls.SMALL_OAK_LOG)) {
+                return EDWalls.STRIPPED_SMALL_OAK_LOG.get().defaultBlockState();
             }
-            if(state.is(EDBuildingBlocks.SMALL_SPRUCE_LOG)) {
-                return EDBuildingBlocks.STRIPPED_SMALL_SPRUCE_LOG.get().defaultBlockState();
+            if(state.is(EDWalls.SMALL_SPRUCE_LOG)) {
+                return EDWalls.STRIPPED_SMALL_SPRUCE_LOG.get().defaultBlockState();
             }
-            if(state.is(EDBuildingBlocks.SMALL_BIRCH_LOG)) {
-                return EDBuildingBlocks.STRIPPED_SMALL_BIRCH_LOG.get().defaultBlockState();
+            if(state.is(EDWalls.SMALL_BIRCH_LOG)) {
+                return EDWalls.STRIPPED_SMALL_BIRCH_LOG.get().defaultBlockState();
             }
-            if(state.is(EDBuildingBlocks.SMALL_JUNGLE_LOG)) {
-                return EDBuildingBlocks.STRIPPED_SMALL_JUNGLE_LOG.get().defaultBlockState();
+            if(state.is(EDWalls.SMALL_JUNGLE_LOG)) {
+                return EDWalls.STRIPPED_SMALL_JUNGLE_LOG.get().defaultBlockState();
             }
-            if(state.is(EDBuildingBlocks.SMALL_ACACIA_LOG)) {
-                return EDBuildingBlocks.STRIPPED_SMALL_ACACIA_LOG.get().defaultBlockState();
+            if(state.is(EDWalls.SMALL_ACACIA_LOG)) {
+                return EDWalls.STRIPPED_SMALL_ACACIA_LOG.get().defaultBlockState();
             }
-            if(state.is(EDBuildingBlocks.SMALL_DARK_OAK_LOG)) {
-                return EDBuildingBlocks.STRIPPED_SMALL_DARK_OAK_LOG.get().defaultBlockState();
+            if(state.is(EDWalls.SMALL_DARK_OAK_LOG)) {
+                return EDWalls.STRIPPED_SMALL_DARK_OAK_LOG.get().defaultBlockState();
             }
-            if(state.is(EDBuildingBlocks.SMALL_MANGROVE_LOG)) {
-                return EDBuildingBlocks.STRIPPED_SMALL_MANGROVE_LOG.get().defaultBlockState();
+            if(state.is(EDWalls.SMALL_MANGROVE_LOG)) {
+                return EDWalls.STRIPPED_SMALL_MANGROVE_LOG.get().defaultBlockState();
             }
-            if(state.is(EDBuildingBlocks.SMALL_CHERRY_LOG)) {
-                return EDBuildingBlocks.STRIPPED_SMALL_CHERRY_LOG.get().defaultBlockState();
+            if(state.is(EDWalls.SMALL_CHERRY_LOG)) {
+                return EDWalls.STRIPPED_SMALL_CHERRY_LOG.get().defaultBlockState();
             }
         }
 

@@ -2,6 +2,8 @@ package com.degroni.everything_deco.common.util;
 
 import com.degroni.everything_deco.EverythingDeco;
 import com.degroni.everything_deco.common.block.EDBuildingBlocks;
+import com.degroni.everything_deco.common.block.EDStoneBlocks;
+import com.degroni.everything_deco.common.block.EDWalls;
 import com.degroni.everything_deco.common.block.EDNaturalBlocks;
 import com.degroni.everything_deco.common.item.EDModItems;
 import net.minecraft.core.registries.Registries;
@@ -22,26 +24,58 @@ public class EverythingDecoCreativeTabs {
                     .title(Component.translatable("itemGroup.everything_deco"))
                     .icon(() -> new ItemStack(EDNaturalBlocks.LIGHT_MUD.get()))
                     .displayItems(((parameters, output) -> {
-                        output.accept(EDModItems.EXAMPLE_ITEM.get());
+                        output.accept(EDNaturalBlocks.BLANCHED_NYLIUM.get());
                         output.accept(EDNaturalBlocks.LIGHT_MUD.get());
                         output.accept(EDNaturalBlocks.MUD.get());
-                        output.accept(EDBuildingBlocks.SMALL_OAK_LOG.get());
-                        output.accept(EDBuildingBlocks.STRIPPED_SMALL_OAK_LOG.get());
-                        output.accept(EDBuildingBlocks.SMALL_SPRUCE_LOG.get());
-                        output.accept(EDBuildingBlocks.STRIPPED_SMALL_SPRUCE_LOG.get());
-                        output.accept(EDBuildingBlocks.SMALL_BIRCH_LOG.get());
-                        output.accept(EDBuildingBlocks.STRIPPED_SMALL_BIRCH_LOG.get());
-                        output.accept(EDBuildingBlocks.SMALL_JUNGLE_LOG.get());
-                        output.accept(EDBuildingBlocks.STRIPPED_SMALL_JUNGLE_LOG.get());
-                        output.accept(EDBuildingBlocks.SMALL_ACACIA_LOG.get());
-                        output.accept(EDBuildingBlocks.STRIPPED_SMALL_ACACIA_LOG.get());
-                        output.accept(EDBuildingBlocks.SMALL_DARK_OAK_LOG.get());
-                        output.accept(EDBuildingBlocks.STRIPPED_SMALL_DARK_OAK_LOG.get());
-                        output.accept(EDBuildingBlocks.SMALL_MANGROVE_LOG.get());
-                        output.accept(EDBuildingBlocks.STRIPPED_SMALL_MANGROVE_LOG.get());
-                        output.accept(EDBuildingBlocks.SMALL_CHERRY_LOG.get());
-                        output.accept(EDBuildingBlocks.STRIPPED_SMALL_CHERRY_LOG.get());
-                        output.accept(EDBuildingBlocks.SMALL_CACTUS.get());
+                        output.accept(EDWalls.SMALL_OAK_LOG.get());
+                        output.accept(EDWalls.STRIPPED_SMALL_OAK_LOG.get());
+                        output.accept(EDWalls.SMALL_SPRUCE_LOG.get());
+                        output.accept(EDWalls.STRIPPED_SMALL_SPRUCE_LOG.get());
+                        output.accept(EDWalls.SMALL_BIRCH_LOG.get());
+                        output.accept(EDWalls.STRIPPED_SMALL_BIRCH_LOG.get());
+                        output.accept(EDWalls.SMALL_JUNGLE_LOG.get());
+                        output.accept(EDWalls.STRIPPED_SMALL_JUNGLE_LOG.get());
+                        output.accept(EDWalls.SMALL_ACACIA_LOG.get());
+                        output.accept(EDWalls.STRIPPED_SMALL_ACACIA_LOG.get());
+                        output.accept(EDWalls.SMALL_DARK_OAK_LOG.get());
+                        output.accept(EDWalls.STRIPPED_SMALL_DARK_OAK_LOG.get());
+                        output.accept(EDWalls.SMALL_MANGROVE_LOG.get());
+                        output.accept(EDWalls.STRIPPED_SMALL_MANGROVE_LOG.get());
+                        output.accept(EDWalls.SMALL_CHERRY_LOG.get());
+                        output.accept(EDWalls.STRIPPED_SMALL_CHERRY_LOG.get());
+                        output.accept(EDWalls.SMALL_CACTUS.get());
+                        output.accept(EDNaturalBlocks.TIN_ORE.get());
+                        output.accept(EDNaturalBlocks.DEEPSLATE_TIN_ORE.get());
+
+                        /* BLOCKS */
+                        output.accept(EDStoneBlocks.RIVERSTONE.get());
+                        output.accept(EDBuildingBlocks.RIVERSTONE_STAIRS.get());
+                        output.accept(EDBuildingBlocks.RIVERSTONE_SLAB.get());
+                        output.accept(EDWalls.RIVERSTONE_WALL.get());
+
+                        output.accept(EDStoneBlocks.DARK_RIVERSTONE.get());
+                        output.accept(EDBuildingBlocks.DARK_RIVERSTONE_STAIRS.get());
+                        output.accept(EDBuildingBlocks.DARK_RIVERSTONE_SLAB.get());
+                        output.accept(EDWalls.DARK_RIVERSTONE_WALL.get());
+
+                        output.accept(EDStoneBlocks.WETSTONE.get());
+                        output.accept(EDBuildingBlocks.WETSTONE_STAIRS.get());
+                        output.accept(EDBuildingBlocks.WETSTONE_SLAB.get());
+                        output.accept(EDWalls.WETSTONE_WALL.get());
+
+                        /* ITEMS */
+
+                        output.accept(EDModItems.WHITE_SALT.get());
+                        output.accept(EDModItems.PINK_SALT.get());
+                        output.accept(EDModItems.RAW_TIN.get());
+                        output.accept(EDModItems.TIN_INGOT.get());
+                        output.accept(EDModItems.BRONZE_INGOT.get());
+                        output.accept(EDModItems.CAST_IRON_INGOT.get());
+                        output.accept(EDModItems.STEEL_INGOT.get());
+                        output.accept(EDModItems.SINISTEEL_INGOT.get());
+                        output.accept(EDModItems.COPPER_SHEET.get());
+                        output.accept(EDModItems.GOLD_SHEET.get());
+                        output.accept(EDModItems.IRON_SHEET.get());
                     })).build());
 
     public static void register(IEventBus eventBus) {

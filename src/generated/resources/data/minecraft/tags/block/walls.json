@@ -16,6 +16,9 @@
     "everything_deco:stripped_small_mangrove_log",
     "everything_deco:small_cherry_log",
     "everything_deco:stripped_small_cherry_log",
-    "everything_deco:small_cactus"
+    "everything_deco:small_cactus",
+    "everything_deco:riverstone_wall",
+    "everything_deco:dark_riverstone_wall",
+    "everything_deco:wetstone_wall"
   ]
 }

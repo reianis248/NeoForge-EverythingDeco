@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "everything_deco:block/wetstone_slab"
+    },
+    "type=double": {
+      "model": "everything_deco:block/wetstone"
+    },
+    "type=top": {
+      "model": "everything_deco:block/wetstone_slab_top"
+    }
+  }
+}

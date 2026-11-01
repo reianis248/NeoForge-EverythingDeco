@@ -1,0 +1,14 @@
+{
+  "priority": 1,
+  "title": {
+    "text": {
+      "translate": "section.everything_deco.building_blocks"
+    },
+    "color": "#FFFFFF",
+    "background": "#AA000000",
+    "orientation": "center"
+  },
+  "banner": {
+    "color": "#5A8B42"
+  }
+}

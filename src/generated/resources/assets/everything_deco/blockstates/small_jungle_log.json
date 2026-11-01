@@ -10,23 +10,8 @@
     },
     {
       "apply": {
-        "model": "everything_deco:block/small_jungle_log_side"
-      },
-      "when": {
-        "north": "low"
-      }
-    },
-    {
-      "apply": {
-        "model": "everything_deco:block/small_jungle_log_side_tall"
-      },
-      "when": {
-        "north": "tall"
-      }
-    },
-    {
-      "apply": {
         "model": "everything_deco:block/small_jungle_log_side",
+        "uvlock": true,
         "y": 90
       },
       "when": {
@@ -36,6 +21,7 @@
     {
       "apply": {
         "model": "everything_deco:block/small_jungle_log_side_tall",
+        "uvlock": true,
         "y": 90
       },
       "when": {
@@ -45,6 +31,25 @@
     {
       "apply": {
         "model": "everything_deco:block/small_jungle_log_side",
+        "uvlock": true
+      },
+      "when": {
+        "north": "low"
+      }
+    },
+    {
+      "apply": {
+        "model": "everything_deco:block/small_jungle_log_side_tall",
+        "uvlock": true
+      },
+      "when": {
+        "north": "tall"
+      }
+    },
+    {
+      "apply": {
+        "model": "everything_deco:block/small_jungle_log_side",
+        "uvlock": true,
         "y": 180
       },
       "when": {
@@ -54,6 +59,7 @@
     {
       "apply": {
         "model": "everything_deco:block/small_jungle_log_side_tall",
+        "uvlock": true,
         "y": 180
       },
       "when": {
@@ -63,6 +69,7 @@
     {
       "apply": {
         "model": "everything_deco:block/small_jungle_log_side",
+        "uvlock": true,
         "y": 270
       },
       "when": {
@@ -72,6 +79,7 @@
     {
       "apply": {
         "model": "everything_deco:block/small_jungle_log_side_tall",
+        "uvlock": true,
         "y": 270
       },
       "when": {

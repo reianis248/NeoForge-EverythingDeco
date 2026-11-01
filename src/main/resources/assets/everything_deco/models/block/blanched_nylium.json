@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "particle": "everything_deco:block/blanched_nylium_side",
+    "down": "minecraft:block/netherrack",
+    "up": "everything_deco:block/blanched_nylium_top",
+    "north": "everything_deco:block/blanched_nylium_side",
+    "east": "everything_deco:block/blanched_nylium_side",
+    "south": "everything_deco:block/blanched_nylium_side",
+    "west": "everything_deco:block/blanched_nylium_side"
+  }
+}

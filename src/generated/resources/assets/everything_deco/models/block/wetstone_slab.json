@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "everything_deco:block/wetstone",
+    "side": "everything_deco:block/wetstone",
+    "top": "everything_deco:block/wetstone"
+  }
+}

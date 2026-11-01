@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "everything_deco:block/dark_riverstone",
+    "side": "everything_deco:block/dark_riverstone",
+    "top": "everything_deco:block/dark_riverstone"
+  }
+}

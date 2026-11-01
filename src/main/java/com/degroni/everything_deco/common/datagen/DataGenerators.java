@@ -2,6 +2,7 @@ package com.degroni.everything_deco.common.datagen;
 
 import com.degroni.everything_deco.EverythingDeco;
 import com.degroni.everything_deco.common.datagen.dataprovider.*;
+import com.degroni.everything_deco.common.datagen.dataprovider.lang.EDLanguageProviderEnglish;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -31,6 +32,8 @@ public class DataGenerators {
         BlockTagsProvider blockTagsProvider = new EDBlockTagProvider(packOutput, lookupProvider, existingFileHelper);
         generator.addProvider(event.includeServer(), blockTagsProvider);
         generator.addProvider(event.includeServer(), new EDItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
+
+        generator.addProvider(event.includeServer(), new EDLanguageProviderEnglish(packOutput, "en_us"));
 
 //        generator.addProvider(event.includeServer(), new EDDataMapProvider(packOutput, lookupProvider));
 
