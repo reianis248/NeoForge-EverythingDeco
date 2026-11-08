@@ -24,6 +24,14 @@ public class EverythingDecoCreativeTabs {
                         output.accept(EDNaturalBlocks.BLANCHED_NYLIUM.get());
                         output.accept(EDNaturalBlocks.LIGHT_MUD.get());
                         output.accept(EDNaturalBlocks.MUD.get());
+
+                        output.accept(EDStoneBlocks.RIVERSTONE.get());
+                        output.accept(EDStoneBlocks.DARK_RIVERSTONE.get());
+                        output.accept(EDStoneBlocks.WETSTONE.get());
+
+                        output.accept(EDNaturalBlocks.TIN_ORE.get());
+                        output.accept(EDNaturalBlocks.DEEPSLATE_TIN_ORE.get());
+
                         output.accept(EDWalls.SMALL_OAK_LOG.get());
                         output.accept(EDWalls.STRIPPED_SMALL_OAK_LOG.get());
                         output.accept(EDWalls.SMALL_SPRUCE_LOG.get());
@@ -41,32 +49,36 @@ public class EverythingDecoCreativeTabs {
                         output.accept(EDWalls.SMALL_CHERRY_LOG.get());
                         output.accept(EDWalls.STRIPPED_SMALL_CHERRY_LOG.get());
                         output.accept(EDWalls.SMALL_CACTUS.get());
-                        output.accept(EDNaturalBlocks.TIN_ORE.get());
-                        output.accept(EDNaturalBlocks.DEEPSLATE_TIN_ORE.get());
 
                         /* BLOCKS */
+                        output.accept(EDMetalBlocks.TIN_BLOCK.get());
+                        output.accept(EDMetalBlocks.BRONZE_BLOCK.get());
                         output.accept(EDMetalBlocks.CUT_IRON.get());
+                        output.accept(EDMetalBlocks.CUT_IRON_STAIRS.get());
+                        output.accept(EDMetalBlocks.CUT_IRON_SLAB.get());
                         output.accept(EDMetalBlocks.CHISELED_IRON.get());
                         output.accept(EDMetalBlocks.CUT_TIN.get());
+                        output.accept(EDMetalBlocks.CUT_TIN_STAIRS.get());
+                        output.accept(EDMetalBlocks.CUT_TIN_SLAB.get());
                         output.accept(EDMetalBlocks.CHISELED_TIN.get());
+                        output.accept(EDMetalBlocks.CUT_BRONZE.get());
+                        output.accept(EDMetalBlocks.CUT_BRONZE_STAIRS.get());
+                        output.accept(EDMetalBlocks.CUT_BRONZE_SLAB.get());
+                        output.accept(EDMetalBlocks.CHISELED_BRONZE.get());
 
-                        output.accept(EDStoneBlocks.RIVERSTONE.get());
                         output.accept(EDBuildingBlocks.RIVERSTONE_STAIRS.get());
                         output.accept(EDBuildingBlocks.RIVERSTONE_SLAB.get());
                         output.accept(EDWalls.RIVERSTONE_WALL.get());
 
-                        output.accept(EDStoneBlocks.DARK_RIVERSTONE.get());
                         output.accept(EDBuildingBlocks.DARK_RIVERSTONE_STAIRS.get());
                         output.accept(EDBuildingBlocks.DARK_RIVERSTONE_SLAB.get());
                         output.accept(EDWalls.DARK_RIVERSTONE_WALL.get());
 
-                        output.accept(EDStoneBlocks.WETSTONE.get());
                         output.accept(EDBuildingBlocks.WETSTONE_STAIRS.get());
                         output.accept(EDBuildingBlocks.WETSTONE_SLAB.get());
                         output.accept(EDWalls.WETSTONE_WALL.get());
 
                         /* ITEMS */
-
                         output.accept(EDModItems.WHITE_SALT.get());
                         output.accept(EDModItems.PINK_SALT.get());
                         output.accept(EDModItems.RAW_TIN.get());

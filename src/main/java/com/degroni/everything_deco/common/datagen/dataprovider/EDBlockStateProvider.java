@@ -34,10 +34,27 @@ public class EDBlockStateProvider extends BlockStateProvider {
 
 
         blockWithItem(EDMetalBlocks.CUT_IRON);
+        stairsBlock(EDMetalBlocks.CUT_IRON_STAIRS.get(), blockTexture(EDMetalBlocks.CUT_IRON.get()));
+        slabBlock(EDMetalBlocks.CUT_IRON_SLAB.get(), blockTexture(EDMetalBlocks.CUT_IRON.get()), blockTexture(EDMetalBlocks.CUT_IRON.get()));
+        blockItem(EDMetalBlocks.CUT_IRON_STAIRS);
+        blockItem(EDMetalBlocks.CUT_IRON_SLAB);
         blockWithItem(EDMetalBlocks.CHISELED_IRON);
+
         blockWithItem(EDMetalBlocks.TIN_BLOCK);
         blockWithItem(EDMetalBlocks.CUT_TIN);
+        stairsBlock(EDMetalBlocks.CUT_TIN_STAIRS.get(), blockTexture(EDMetalBlocks.CUT_TIN.get()));
+        slabBlock(EDMetalBlocks.CUT_TIN_SLAB.get(), blockTexture(EDMetalBlocks.CUT_TIN.get()), blockTexture(EDMetalBlocks.CUT_TIN.get()));
+        blockItem(EDMetalBlocks.CUT_TIN_STAIRS);
+        blockItem(EDMetalBlocks.CUT_TIN_SLAB);
         blockWithItem(EDMetalBlocks.CHISELED_TIN);
+
+        blockWithItem(EDMetalBlocks.BRONZE_BLOCK);
+        blockWithItem(EDMetalBlocks.CUT_BRONZE);
+        stairsBlock(EDMetalBlocks.CUT_BRONZE_STAIRS.get(), blockTexture(EDMetalBlocks.CUT_BRONZE.get()));
+        slabBlock(EDMetalBlocks.CUT_BRONZE_SLAB.get(), blockTexture(EDMetalBlocks.CUT_BRONZE.get()), blockTexture(EDMetalBlocks.CUT_BRONZE.get()));
+        blockItem(EDMetalBlocks.CUT_BRONZE_STAIRS);
+        blockItem(EDMetalBlocks.CUT_BRONZE_SLAB);
+        blockWithItem(EDMetalBlocks.CHISELED_BRONZE);
 
 
         blockWithItem(EDStoneBlocks.RIVERSTONE);
@@ -82,9 +99,8 @@ public class EDBlockStateProvider extends BlockStateProvider {
         newWallBlock(EDWalls.STRIPPED_SMALL_MANGROVE_LOG.get(), blockTexture(Blocks.STRIPPED_MANGROVE_LOG));
         newWallBlock(EDWalls.STRIPPED_SMALL_CHERRY_LOG.get(), blockTexture(Blocks.STRIPPED_CHERRY_LOG));
 
-//        blockItem(CampedNaturalBlocks.ASPEN_LEAVES);
-//        blockItem(CampedNaturalBlocks.RED_OAK_LEAVES);
-    }
+//        blockItem(BlockClass.EXAMPLE_BLOCK);
+        }
 
     private void saplingBlock(DeferredBlock<Block> blockRegistryObject) {
         simpleBlock(blockRegistryObject.get(),

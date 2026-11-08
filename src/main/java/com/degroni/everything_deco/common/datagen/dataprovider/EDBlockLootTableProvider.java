@@ -81,10 +81,21 @@ public class EDBlockLootTableProvider extends BlockLootSubProvider {
 
 
         dropSelf(EDMetalBlocks.CUT_IRON.get());
+        dropSelf(EDMetalBlocks.CUT_IRON_STAIRS.get());
+        dropSelf(EDMetalBlocks.CUT_IRON_SLAB.get());
         dropSelf(EDMetalBlocks.CHISELED_IRON.get());
+
         dropSelf(EDMetalBlocks.TIN_BLOCK.get());
         dropSelf(EDMetalBlocks.CUT_TIN.get());
+        dropSelf(EDMetalBlocks.CUT_TIN_STAIRS.get());
+        dropSelf(EDMetalBlocks.CUT_TIN_SLAB.get());
         dropSelf(EDMetalBlocks.CHISELED_TIN.get());
+
+        dropSelf(EDMetalBlocks.BRONZE_BLOCK.get());
+        dropSelf(EDMetalBlocks.CUT_BRONZE.get());
+        dropSelf(EDMetalBlocks.CUT_BRONZE_STAIRS.get());
+        dropSelf(EDMetalBlocks.CUT_BRONZE_SLAB.get());
+        dropSelf(EDMetalBlocks.CHISELED_BRONZE.get());
 
 
         dropSelf(EDStoneBlocks.RIVERSTONE.get());

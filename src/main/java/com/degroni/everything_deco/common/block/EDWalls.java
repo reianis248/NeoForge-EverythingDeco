@@ -6,6 +6,7 @@ import com.degroni.everything_deco.common.item.EDModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -21,157 +22,137 @@ public class EDWalls {
     public static final DeferredRegister.Blocks WALL = DeferredRegister.createBlocks(EverythingDeco.MOD_ID);
 
     /* Walls */
-    public static final DeferredBlock<EDWallBlock> SMALL_OAK_LOG = registerWallBlock(
-            "small_oak_log",
+    public static final DeferredBlock<EDWallBlock> SMALL_OAK_LOG = registerWallBlock("small_oak_log",
             () -> new EDWallBlock(BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.PODZOL)
+                    .mapColor(Blocks.OAK_LOG.defaultMapColor())
                     .instrument(NoteBlockInstrument.BASS)
                     .strength(2.0F)
                     .sound(SoundType.WOOD)
                     .ignitedByLava()));
-    public static final DeferredBlock<EDWallBlock> STRIPPED_SMALL_OAK_LOG = registerWallBlock(
-            "stripped_small_oak_log",
+    public static final DeferredBlock<EDWallBlock> STRIPPED_SMALL_OAK_LOG = registerWallBlock("stripped_small_oak_log",
             () -> new EDWallBlock(BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.PODZOL)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .strength(2.0F)
-                    .sound(SoundType.WOOD)
-                    .ignitedByLava()));
-
-    public static final DeferredBlock<EDWallBlock> SMALL_SPRUCE_LOG = registerWallBlock(
-            "small_spruce_log",
-            () -> new EDWallBlock(BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.PODZOL)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .strength(2.0F)
-                    .sound(SoundType.WOOD)
-                    .ignitedByLava()));
-    public static final DeferredBlock<EDWallBlock> STRIPPED_SMALL_SPRUCE_LOG = registerWallBlock(
-            "stripped_small_spruce_log",
-            () -> new EDWallBlock(BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.PODZOL)
+                    .mapColor(Blocks.STRIPPED_OAK_LOG.defaultMapColor())
                     .instrument(NoteBlockInstrument.BASS)
                     .strength(2.0F)
                     .sound(SoundType.WOOD)
                     .ignitedByLava()));
 
-    public static final DeferredBlock<EDWallBlock> SMALL_BIRCH_LOG = registerWallBlock(
-            "small_birch_log",
+    public static final DeferredBlock<EDWallBlock> SMALL_SPRUCE_LOG = registerWallBlock("small_spruce_log",
             () -> new EDWallBlock(BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.PODZOL)
+                    .mapColor(Blocks.SPRUCE_LOG.defaultMapColor())
                     .instrument(NoteBlockInstrument.BASS)
                     .strength(2.0F)
                     .sound(SoundType.WOOD)
                     .ignitedByLava()));
-    public static final DeferredBlock<EDWallBlock> STRIPPED_SMALL_BIRCH_LOG = registerWallBlock(
-            "stripped_small_birch_log",
+    public static final DeferredBlock<EDWallBlock> STRIPPED_SMALL_SPRUCE_LOG = registerWallBlock("stripped_small_spruce_log",
             () -> new EDWallBlock(BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.PODZOL)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .strength(2.0F)
-                    .sound(SoundType.WOOD)
-                    .ignitedByLava()));
-
-    public static final DeferredBlock<EDWallBlock> SMALL_JUNGLE_LOG = registerWallBlock(
-            "small_jungle_log",
-            () -> new EDWallBlock(BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.PODZOL)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .strength(2.0F)
-                    .sound(SoundType.WOOD)
-                    .ignitedByLava()));
-    public static final DeferredBlock<EDWallBlock> STRIPPED_SMALL_JUNGLE_LOG = registerWallBlock(
-            "stripped_small_jungle_log",
-            () -> new EDWallBlock(BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.PODZOL)
+                    .mapColor(Blocks.STRIPPED_SPRUCE_LOG.defaultMapColor())
                     .instrument(NoteBlockInstrument.BASS)
                     .strength(2.0F)
                     .sound(SoundType.WOOD)
                     .ignitedByLava()));
 
-    public static final DeferredBlock<EDWallBlock> SMALL_ACACIA_LOG = registerWallBlock(
-            "small_acacia_log",
+    public static final DeferredBlock<EDWallBlock> SMALL_BIRCH_LOG = registerWallBlock("small_birch_log",
             () -> new EDWallBlock(BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.PODZOL)
+                    .mapColor(Blocks.BIRCH_LOG.defaultMapColor())
                     .instrument(NoteBlockInstrument.BASS)
                     .strength(2.0F)
                     .sound(SoundType.WOOD)
                     .ignitedByLava()));
-    public static final DeferredBlock<EDWallBlock> STRIPPED_SMALL_ACACIA_LOG = registerWallBlock(
-            "stripped_small_acacia_log",
+    public static final DeferredBlock<EDWallBlock> STRIPPED_SMALL_BIRCH_LOG = registerWallBlock("stripped_small_birch_log",
             () -> new EDWallBlock(BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.PODZOL)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .strength(2.0F)
-                    .sound(SoundType.WOOD)
-                    .ignitedByLava()));
-
-    public static final DeferredBlock<EDWallBlock> SMALL_DARK_OAK_LOG = registerWallBlock(
-            "small_dark_oak_log",
-            () -> new EDWallBlock(BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.PODZOL)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .strength(2.0F)
-                    .sound(SoundType.WOOD)
-                    .ignitedByLava()));
-    public static final DeferredBlock<EDWallBlock> STRIPPED_SMALL_DARK_OAK_LOG = registerWallBlock(
-            "stripped_small_dark_oak_log",
-            () -> new EDWallBlock(BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.PODZOL)
+                    .mapColor(Blocks.STRIPPED_BIRCH_LOG.defaultMapColor())
                     .instrument(NoteBlockInstrument.BASS)
                     .strength(2.0F)
                     .sound(SoundType.WOOD)
                     .ignitedByLava()));
 
-    public static final DeferredBlock<EDWallBlock> SMALL_MANGROVE_LOG = registerWallBlock(
-            "small_mangrove_log",
+    public static final DeferredBlock<EDWallBlock> SMALL_JUNGLE_LOG = registerWallBlock("small_jungle_log",
             () -> new EDWallBlock(BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.PODZOL)
+                    .mapColor(Blocks.JUNGLE_LOG.defaultMapColor())
                     .instrument(NoteBlockInstrument.BASS)
                     .strength(2.0F)
                     .sound(SoundType.WOOD)
                     .ignitedByLava()));
-    public static final DeferredBlock<EDWallBlock> STRIPPED_SMALL_MANGROVE_LOG = registerWallBlock(
-            "stripped_small_mangrove_log",
+    public static final DeferredBlock<EDWallBlock> STRIPPED_SMALL_JUNGLE_LOG = registerWallBlock("stripped_small_jungle_log",
             () -> new EDWallBlock(BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.PODZOL)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .strength(2.0F)
-                    .sound(SoundType.WOOD)
-                    .ignitedByLava()));
-
-    public static final DeferredBlock<EDWallBlock> SMALL_CHERRY_LOG = registerWallBlock(
-            "small_cherry_log",
-            () -> new EDWallBlock(BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.PODZOL)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .strength(2.0F)
-                    .sound(SoundType.WOOD)
-                    .ignitedByLava()));
-    public static final DeferredBlock<EDWallBlock> STRIPPED_SMALL_CHERRY_LOG = registerWallBlock(
-            "stripped_small_cherry_log",
-            () -> new EDWallBlock(BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.PODZOL)
+                    .mapColor(Blocks.STRIPPED_JUNGLE_LOG.defaultMapColor())
                     .instrument(NoteBlockInstrument.BASS)
                     .strength(2.0F)
                     .sound(SoundType.WOOD)
                     .ignitedByLava()));
 
-    public static final DeferredBlock<WallBlock> SMALL_CACTUS = registerWallBlock(
-            "small_cactus",
+    public static final DeferredBlock<EDWallBlock> SMALL_ACACIA_LOG = registerWallBlock("small_acacia_log",
+            () -> new EDWallBlock(BlockBehaviour.Properties.of()
+                    .mapColor(Blocks.ACACIA_LOG.defaultMapColor())
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(2.0F)
+                    .sound(SoundType.WOOD)
+                    .ignitedByLava()));
+    public static final DeferredBlock<EDWallBlock> STRIPPED_SMALL_ACACIA_LOG = registerWallBlock("stripped_small_acacia_log",
+            () -> new EDWallBlock(BlockBehaviour.Properties.of()
+                    .mapColor(Blocks.STRIPPED_ACACIA_LOG.defaultMapColor())
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(2.0F)
+                    .sound(SoundType.WOOD)
+                    .ignitedByLava()));
+
+    public static final DeferredBlock<EDWallBlock> SMALL_DARK_OAK_LOG = registerWallBlock("small_dark_oak_log",
+            () -> new EDWallBlock(BlockBehaviour.Properties.of()
+                    .mapColor(Blocks.DARK_OAK_LOG.defaultMapColor())
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(2.0F)
+                    .sound(SoundType.WOOD)
+                    .ignitedByLava()));
+    public static final DeferredBlock<EDWallBlock> STRIPPED_SMALL_DARK_OAK_LOG = registerWallBlock("stripped_small_dark_oak_log",
+            () -> new EDWallBlock(BlockBehaviour.Properties.of()
+                    .mapColor(Blocks.STRIPPED_DARK_OAK_LOG.defaultMapColor())
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(2.0F)
+                    .sound(SoundType.WOOD)
+                    .ignitedByLava()));
+
+    public static final DeferredBlock<EDWallBlock> SMALL_MANGROVE_LOG = registerWallBlock("small_mangrove_log",
+            () -> new EDWallBlock(BlockBehaviour.Properties.of()
+                    .mapColor(Blocks.MANGROVE_LOG.defaultMapColor())
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(2.0F)
+                    .sound(SoundType.WOOD)
+                    .ignitedByLava()));
+    public static final DeferredBlock<EDWallBlock> STRIPPED_SMALL_MANGROVE_LOG = registerWallBlock("stripped_small_mangrove_log",
+            () -> new EDWallBlock(BlockBehaviour.Properties.of()
+                    .mapColor(Blocks.STRIPPED_MANGROVE_LOG.defaultMapColor())
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(2.0F)
+                    .sound(SoundType.WOOD)
+                    .ignitedByLava()));
+
+    public static final DeferredBlock<EDWallBlock> SMALL_CHERRY_LOG = registerWallBlock("small_cherry_log",
+            () -> new EDWallBlock(BlockBehaviour.Properties.of()
+                    .mapColor(Blocks.CHERRY_LOG.defaultMapColor())
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(2.0F)
+                    .sound(SoundType.WOOD)
+                    .ignitedByLava()));
+    public static final DeferredBlock<EDWallBlock> STRIPPED_SMALL_CHERRY_LOG = registerWallBlock("stripped_small_cherry_log",
+            () -> new EDWallBlock(BlockBehaviour.Properties.of()
+                    .mapColor(Blocks.STRIPPED_CHERRY_LOG.defaultMapColor())
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(2.0F)
+                    .sound(SoundType.WOOD)
+                    .ignitedByLava()));
+
+    public static final DeferredBlock<WallBlock> SMALL_CACTUS = registerWallBlock("small_cactus",
             () -> new WallBlock(BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.PLANT)
+                    .mapColor(Blocks.CACTUS.defaultMapColor())
                     .strength(0.4F)
                     .sound(SoundType.WOOL)));
 
-    public static final DeferredBlock<WallBlock> RIVERSTONE_WALL = registerWallBlock(
-            "riverstone_wall",
+    public static final DeferredBlock<WallBlock> RIVERSTONE_WALL = registerWallBlock("riverstone_wall",
             () -> new WallBlock(calciteStoneProperties(MapColor.TERRACOTTA_WHITE)));
-    public static final DeferredBlock<WallBlock> DARK_RIVERSTONE_WALL = registerWallBlock(
-            "dark_riverstone_wall",
+    public static final DeferredBlock<WallBlock> DARK_RIVERSTONE_WALL = registerWallBlock("dark_riverstone_wall",
             () -> new WallBlock(calciteStoneProperties(MapColor.TERRACOTTA_BLACK)));
-    public static final DeferredBlock<WallBlock> WETSTONE_WALL = registerWallBlock(
-            "wetstone_wall",
+    public static final DeferredBlock<WallBlock> WETSTONE_WALL = registerWallBlock("wetstone_wall",
             () -> new WallBlock(calciteStoneProperties(MapColor.TERRACOTTA_GRAY)));
 
 //    public static final DeferredBlock<WallBlock> RIVERSTONE_WALL = registerWallBlock(

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "everything_deco:block/cut_iron_slab"
+    },
+    "type=double": {
+      "model": "everything_deco:block/cut_iron"
+    },
+    "type=top": {
+      "model": "everything_deco:block/cut_iron_slab_top"
+    }
+  }
+}

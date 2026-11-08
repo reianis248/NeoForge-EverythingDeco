@@ -29,27 +29,67 @@ public class ClientEvents {
             ResourceLocation naturalBlocksSection = ResourceLocation.fromNamespaceAndPath(EverythingDeco.MOD_ID, "natural_blocks");
             ResourceLocation buildingBlocksSection = ResourceLocation.fromNamespaceAndPath(EverythingDeco.MOD_ID, "building_blocks");
             ResourceLocation wallBlocksSection = ResourceLocation.fromNamespaceAndPath(EverythingDeco.MOD_ID, "wall_blocks");
-            ResourceLocation miscSection = ResourceLocation.fromNamespaceAndPath(EverythingDeco.MOD_ID, "misc");
 
             /* Natural Blocks */
             SectionedItems.addItem(naturalBlocksSection, EDNaturalBlocks.BLANCHED_NYLIUM.get());
             SectionedItems.addItem(naturalBlocksSection, EDNaturalBlocks.LIGHT_MUD.get());
             SectionedItems.addItem(naturalBlocksSection, EDNaturalBlocks.MUD.get());
+
             SectionedItems.addItem(naturalBlocksSection, EDStoneBlocks.RIVERSTONE.get());
             SectionedItems.addItem(naturalBlocksSection, EDStoneBlocks.DARK_RIVERSTONE.get());
             SectionedItems.addItem(naturalBlocksSection, EDStoneBlocks.WETSTONE.get());
 
-            /* Ores and Materials */
             SectionedItems.addItem(oresAndMaterialsSection, EDNaturalBlocks.TIN_ORE);
             SectionedItems.addItem(oresAndMaterialsSection, EDNaturalBlocks.DEEPSLATE_TIN_ORE);
-            SectionedItems.addItem(oresAndMaterialsSection, EDMetalBlocks.TIN_BLOCK);
+
+            SectionedItems.addItem(naturalBlocksSection, EDWalls.SMALL_OAK_LOG);
+            SectionedItems.addItem(naturalBlocksSection, EDWalls.STRIPPED_SMALL_OAK_LOG);
+            SectionedItems.addItem(naturalBlocksSection, EDWalls.SMALL_SPRUCE_LOG);
+            SectionedItems.addItem(naturalBlocksSection, EDWalls.STRIPPED_SMALL_SPRUCE_LOG);
+            SectionedItems.addItem(naturalBlocksSection, EDWalls.SMALL_BIRCH_LOG);
+            SectionedItems.addItem(naturalBlocksSection, EDWalls.STRIPPED_SMALL_BIRCH_LOG);
+            SectionedItems.addItem(naturalBlocksSection, EDWalls.SMALL_JUNGLE_LOG);
+            SectionedItems.addItem(naturalBlocksSection, EDWalls.STRIPPED_SMALL_JUNGLE_LOG);
+            SectionedItems.addItem(naturalBlocksSection, EDWalls.SMALL_ACACIA_LOG);
+            SectionedItems.addItem(naturalBlocksSection, EDWalls.STRIPPED_SMALL_ACACIA_LOG);
+            SectionedItems.addItem(naturalBlocksSection, EDWalls.SMALL_DARK_OAK_LOG);
+            SectionedItems.addItem(naturalBlocksSection, EDWalls.STRIPPED_SMALL_DARK_OAK_LOG);
+            SectionedItems.addItem(naturalBlocksSection, EDWalls.SMALL_MANGROVE_LOG);
+            SectionedItems.addItem(naturalBlocksSection, EDWalls.STRIPPED_SMALL_MANGROVE_LOG);
+            SectionedItems.addItem(naturalBlocksSection, EDWalls.SMALL_CHERRY_LOG);
+            SectionedItems.addItem(naturalBlocksSection, EDWalls.STRIPPED_SMALL_CHERRY_LOG);
+            SectionedItems.addItem(naturalBlocksSection, EDWalls.SMALL_CACTUS);
+
+            /* Wall Blocks */
+
+            /* Ores and Materials */
             SectionedItems.addItem(oresAndMaterialsSection, EDModItems.RAW_TIN);
+            SectionedItems.addItem(oresAndMaterialsSection, EDModItems.WHITE_SALT);
+            SectionedItems.addItem(oresAndMaterialsSection, EDModItems.PINK_SALT);
+            SectionedItems.addItem(oresAndMaterialsSection, EDModItems.TIN_INGOT);
+            SectionedItems.addItem(oresAndMaterialsSection, EDModItems.BRONZE_INGOT);
+            SectionedItems.addItem(oresAndMaterialsSection, EDModItems.STEEL_INGOT);
+            SectionedItems.addItem(oresAndMaterialsSection, EDModItems.CAST_IRON_INGOT);
+            SectionedItems.addItem(oresAndMaterialsSection, EDModItems.SINISTEEL_INGOT);
+            SectionedItems.addItem(oresAndMaterialsSection, EDModItems.COPPER_SHEET);
+            SectionedItems.addItem(oresAndMaterialsSection, EDModItems.GOLD_SHEET);
+            SectionedItems.addItem(oresAndMaterialsSection, EDModItems.IRON_SHEET);
 
             /* Building Blocks */
+            SectionedItems.addItem(oresAndMaterialsSection, EDMetalBlocks.TIN_BLOCK);
+            SectionedItems.addItem(oresAndMaterialsSection, EDMetalBlocks.BRONZE_BLOCK);
             SectionedItems.addItem(buildingBlocksSection, EDMetalBlocks.CUT_IRON);
+            SectionedItems.addItem(buildingBlocksSection, EDMetalBlocks.CUT_IRON_STAIRS);
+            SectionedItems.addItem(buildingBlocksSection, EDMetalBlocks.CUT_IRON_SLAB);
             SectionedItems.addItem(buildingBlocksSection, EDMetalBlocks.CHISELED_IRON);
             SectionedItems.addItem(buildingBlocksSection, EDMetalBlocks.CUT_TIN);
+            SectionedItems.addItem(buildingBlocksSection, EDMetalBlocks.CUT_TIN_STAIRS);
+            SectionedItems.addItem(buildingBlocksSection, EDMetalBlocks.CUT_TIN_SLAB);
             SectionedItems.addItem(buildingBlocksSection, EDMetalBlocks.CHISELED_TIN);
+            SectionedItems.addItem(buildingBlocksSection, EDMetalBlocks.CUT_BRONZE);
+            SectionedItems.addItem(buildingBlocksSection, EDMetalBlocks.CUT_BRONZE_STAIRS);
+            SectionedItems.addItem(buildingBlocksSection, EDMetalBlocks.CUT_BRONZE_SLAB);
+            SectionedItems.addItem(buildingBlocksSection, EDMetalBlocks.CHISELED_BRONZE);
 
             SectionedItems.addItem(buildingBlocksSection, EDBuildingBlocks.RIVERSTONE_STAIRS);
             SectionedItems.addItem(buildingBlocksSection, EDBuildingBlocks.RIVERSTONE_SLAB);
@@ -62,37 +102,6 @@ public class ClientEvents {
             SectionedItems.addItem(buildingBlocksSection, EDBuildingBlocks.WETSTONE_STAIRS);
             SectionedItems.addItem(buildingBlocksSection, EDBuildingBlocks.WETSTONE_SLAB);
             SectionedItems.addItem(buildingBlocksSection, EDWalls.WETSTONE_WALL);
-
-            /* Wall Blocks */
-            SectionedItems.addItem(wallBlocksSection, EDWalls.SMALL_OAK_LOG);
-            SectionedItems.addItem(wallBlocksSection, EDWalls.STRIPPED_SMALL_OAK_LOG);
-            SectionedItems.addItem(wallBlocksSection, EDWalls.SMALL_SPRUCE_LOG);
-            SectionedItems.addItem(wallBlocksSection, EDWalls.STRIPPED_SMALL_SPRUCE_LOG);
-            SectionedItems.addItem(wallBlocksSection, EDWalls.SMALL_BIRCH_LOG);
-            SectionedItems.addItem(wallBlocksSection, EDWalls.STRIPPED_SMALL_BIRCH_LOG);
-            SectionedItems.addItem(wallBlocksSection, EDWalls.SMALL_JUNGLE_LOG);
-            SectionedItems.addItem(wallBlocksSection, EDWalls.STRIPPED_SMALL_JUNGLE_LOG);
-            SectionedItems.addItem(wallBlocksSection, EDWalls.SMALL_ACACIA_LOG);
-            SectionedItems.addItem(wallBlocksSection, EDWalls.STRIPPED_SMALL_ACACIA_LOG);
-            SectionedItems.addItem(wallBlocksSection, EDWalls.SMALL_DARK_OAK_LOG);
-            SectionedItems.addItem(wallBlocksSection, EDWalls.STRIPPED_SMALL_DARK_OAK_LOG);
-            SectionedItems.addItem(wallBlocksSection, EDWalls.SMALL_MANGROVE_LOG);
-            SectionedItems.addItem(wallBlocksSection, EDWalls.STRIPPED_SMALL_MANGROVE_LOG);
-            SectionedItems.addItem(wallBlocksSection, EDWalls.SMALL_CHERRY_LOG);
-            SectionedItems.addItem(wallBlocksSection, EDWalls.STRIPPED_SMALL_CHERRY_LOG);
-            SectionedItems.addItem(wallBlocksSection, EDWalls.SMALL_CACTUS);
-
-            /* Misc */
-            SectionedItems.addItem(miscSection, EDModItems.WHITE_SALT);
-            SectionedItems.addItem(miscSection, EDModItems.PINK_SALT);
-            SectionedItems.addItem(miscSection, EDModItems.TIN_INGOT);
-            SectionedItems.addItem(miscSection, EDModItems.BRONZE_INGOT);
-            SectionedItems.addItem(miscSection, EDModItems.STEEL_INGOT);
-            SectionedItems.addItem(miscSection, EDModItems.CAST_IRON_INGOT);
-            SectionedItems.addItem(miscSection, EDModItems.SINISTEEL_INGOT);
-            SectionedItems.addItem(miscSection, EDModItems.COPPER_SHEET);
-            SectionedItems.addItem(miscSection, EDModItems.GOLD_SHEET);
-            SectionedItems.addItem(miscSection, EDModItems.IRON_SHEET);
         });
     }
 }

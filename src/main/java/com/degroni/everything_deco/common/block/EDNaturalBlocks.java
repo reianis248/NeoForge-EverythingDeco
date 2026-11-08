@@ -55,25 +55,20 @@ public class EDNaturalBlocks {
 //            () -> new EDMudBlock(mudProperties(MapColor.TERRACOTTA_CYAN), () -> null)
 //    );
 
-    public static final DeferredBlock<Block> MUD = registerBlock(
-            "mud",
+    public static final DeferredBlock<Block> MUD = registerBlock("mud",
             () -> new EDMudBlock(mudProperties(MapColor.COLOR_BROWN), () -> Blocks.MUD));
-    public static final DeferredBlock<Block> LIGHT_MUD = registerBlock(
-            "light_mud",
+    public static final DeferredBlock<Block> LIGHT_MUD = registerBlock("light_mud",
             () -> new EDMudBlock(mudProperties(MapColor.COLOR_BROWN), MUD));
-    public static final DeferredBlock<Block> BLANCHED_NYLIUM = registerBlock(
-            "blanched_nylium",
+    public static final DeferredBlock<Block> BLANCHED_NYLIUM = registerBlock("blanched_nylium",
             () -> new NyliumBlock(nyliumProperties(MapColor.COLOR_CYAN)));
-    public static final DeferredBlock<Block> TIN_ORE = registerBlock(
-            "tin_ore",
+    public static final DeferredBlock<Block> TIN_ORE = registerBlock("tin_ore",
             () -> new DropExperienceBlock(ConstantInt.of(0),
                     BlockBehaviour.Properties.of()
                             .mapColor(MapColor.STONE)
                             .instrument(NoteBlockInstrument.BASEDRUM)
                             .requiresCorrectToolForDrops()
                             .strength(3.0F, 3.0F)));
-    public static final DeferredBlock<Block> DEEPSLATE_TIN_ORE = registerBlock(
-            "deepslate_tin_ore",
+    public static final DeferredBlock<Block> DEEPSLATE_TIN_ORE = registerBlock("deepslate_tin_ore",
             () -> new DropExperienceBlock(ConstantInt.of(0),
                     BlockBehaviour.Properties.of()
                             .mapColor(MapColor.STONE)

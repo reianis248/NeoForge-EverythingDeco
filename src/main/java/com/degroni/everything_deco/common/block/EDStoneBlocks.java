@@ -18,14 +18,11 @@ import java.util.function.Supplier;
 public class EDStoneBlocks {
     public static final DeferredRegister.Blocks STONE = DeferredRegister.createBlocks(EverythingDeco.MOD_ID);
 
-    public static final DeferredBlock<Block> RIVERSTONE = registerStoneBlock(
-            "riverstone",
+    public static final DeferredBlock<Block> RIVERSTONE = registerStoneBlock("riverstone",
             () -> new Block(calciteStoneProperties(MapColor.TERRACOTTA_WHITE)));
-    public static final DeferredBlock<Block> DARK_RIVERSTONE = registerStoneBlock(
-            "dark_riverstone",
+    public static final DeferredBlock<Block> DARK_RIVERSTONE = registerStoneBlock("dark_riverstone",
             () -> new Block(calciteStoneProperties(MapColor.TERRACOTTA_BLACK)));
-    public static final DeferredBlock<Block> WETSTONE = registerStoneBlock(
-            "wetstone",
+    public static final DeferredBlock<Block> WETSTONE = registerStoneBlock("wetstone",
             () -> new Block(calciteStoneProperties(MapColor.TERRACOTTA_GRAY)));
 
 

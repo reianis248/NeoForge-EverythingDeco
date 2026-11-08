@@ -49,10 +49,19 @@ public class EDLanguageProviderEnglish extends LanguageProvider {
         add(EDWalls.SMALL_CACTUS.get(), "Small Cactus");
 
         add(EDMetalBlocks.CUT_IRON.get(), "Cut Iron");
+        add(EDMetalBlocks.CUT_IRON_STAIRS.get(), "Cut Iron Stairs");
+        add(EDMetalBlocks.CUT_IRON_SLAB.get(), "Cut Iron Slab");
         add(EDMetalBlocks.CHISELED_IRON.get(), "Chiseled Iron");
         add(EDMetalBlocks.TIN_BLOCK.get(), "Tin Block");
         add(EDMetalBlocks.CUT_TIN.get(), "Cut Tin");
+        add(EDMetalBlocks.CUT_TIN_STAIRS.get(), "Cut Tin Stairs");
+        add(EDMetalBlocks.CUT_TIN_SLAB.get(), "Cut Tin Slab");
         add(EDMetalBlocks.CHISELED_TIN.get(), "Chiseled Tin");
+        add(EDMetalBlocks.BRONZE_BLOCK.get(), "Bronze Block");
+        add(EDMetalBlocks.CUT_BRONZE.get(), "Cut Bronze");
+        add(EDMetalBlocks.CUT_BRONZE_STAIRS.get(), "Cut Bronze Stairs");
+        add(EDMetalBlocks.CUT_BRONZE_SLAB.get(), "Cut Bronze Slab");
+        add(EDMetalBlocks.CHISELED_BRONZE.get(), "Chiseled Bronze");
 
         add(EDStoneBlocks.RIVERSTONE.get(), "Riverstone");
         add(EDBuildingBlocks.RIVERSTONE_STAIRS.get(), "Riverstone Stairs");
