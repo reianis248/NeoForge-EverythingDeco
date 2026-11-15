@@ -1,7 +1,7 @@
 package com.degroni.everything_deco.common.datagen.dataprovider;
 
 import com.degroni.everything_deco.EverythingDeco;
-import com.degroni.everything_deco.common.block.*;
+import com.degroni.everything_deco.common.block.registry.*;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -60,6 +60,11 @@ public class EDBlockTagProvider extends BlockTagsProvider {
                 .add(EDWalls.SMALL_CACTUS.get());
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(EDBuildingBlocks.BLACKSTONE_BRICKS.get())
+                .add(EDBuildingBlocks.BLACKSTONE_BRICKS_STAIRS.get())
+                .add(EDBuildingBlocks.BLACKSTONE_BRICKS_SLAB.get())
+                .add(EDWalls.BLACKSTONE_BRICKS_WALL.get())
+
                 .add(EDStoneBlocks.RIVERSTONE.get())
                 .add(EDBuildingBlocks.RIVERSTONE_STAIRS.get())
                 .add(EDBuildingBlocks.RIVERSTONE_SLAB.get())
@@ -106,6 +111,7 @@ public class EDBlockTagProvider extends BlockTagsProvider {
                 .add(EDWalls.SMALL_CHERRY_LOG.get())
                 .add(EDWalls.STRIPPED_SMALL_CHERRY_LOG.get())
                 .add(EDWalls.SMALL_CACTUS.get())
+                .add(EDWalls.BLACKSTONE_BRICKS_WALL.get())
                 .add(EDWalls.RIVERSTONE_WALL.get())
                 .add(EDWalls.DARK_RIVERSTONE_WALL.get())
                 .add(EDWalls.WETSTONE_WALL.get());

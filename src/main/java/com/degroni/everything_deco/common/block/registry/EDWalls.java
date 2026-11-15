@@ -1,7 +1,8 @@
-package com.degroni.everything_deco.common.block;
+package com.degroni.everything_deco.common.block.registry;
 
 import com.degroni.everything_deco.EverythingDeco;
 import com.degroni.everything_deco.common.block.helper.EDWallBlock;
+import com.degroni.everything_deco.common.block.properties.EDMapColor;
 import com.degroni.everything_deco.common.item.EDModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -17,6 +18,9 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
+
+import static com.degroni.everything_deco.common.block.properties.EDBlockProperties.blackstoneProperties;
+import static com.degroni.everything_deco.common.block.properties.EDBlockProperties.calciteStoneProperties;
 
 public class EDWalls {
     public static final DeferredRegister.Blocks WALL = DeferredRegister.createBlocks(EverythingDeco.MOD_ID);
@@ -148,12 +152,18 @@ public class EDWalls {
                     .strength(0.4F)
                     .sound(SoundType.WOOL)));
 
-    public static final DeferredBlock<WallBlock> RIVERSTONE_WALL = registerWallBlock("riverstone_wall",
-            () -> new WallBlock(calciteStoneProperties(MapColor.TERRACOTTA_WHITE)));
-    public static final DeferredBlock<WallBlock> DARK_RIVERSTONE_WALL = registerWallBlock("dark_riverstone_wall",
-            () -> new WallBlock(calciteStoneProperties(MapColor.TERRACOTTA_BLACK)));
-    public static final DeferredBlock<WallBlock> WETSTONE_WALL = registerWallBlock("wetstone_wall",
-            () -> new WallBlock(calciteStoneProperties(MapColor.TERRACOTTA_GRAY)));
+    public static final DeferredBlock<WallBlock> BLACKSTONE_BRICKS_WALL = registerWallBlock(
+            "blackstone_bricks_wall",
+            () -> new WallBlock(blackstoneProperties()));
+    public static final DeferredBlock<WallBlock> RIVERSTONE_WALL = registerWallBlock(
+            "riverstone_wall",
+            () -> new WallBlock(calciteStoneProperties(EDMapColor.RIVERSTONE)));
+    public static final DeferredBlock<WallBlock> DARK_RIVERSTONE_WALL = registerWallBlock(
+            "dark_riverstone_wall",
+            () -> new WallBlock(calciteStoneProperties(EDMapColor.DARKSTONE)));
+    public static final DeferredBlock<WallBlock> WETSTONE_WALL = registerWallBlock(
+            "wetstone_wall",
+            () -> new WallBlock(calciteStoneProperties(EDMapColor.DARKSTONE)));
 
 //    public static final DeferredBlock<WallBlock> RIVERSTONE_WALL = registerWallBlock(
 //            "riverstone_wall",
@@ -164,23 +174,6 @@ public class EDWalls {
 //                    .requiresCorrectToolForDrops()
 //                    .strength(1.5F, 6.0F)));
 
-
-    private static BlockBehaviour.Properties stoneProperties(MapColor mapColor) {
-        return BlockBehaviour.Properties.of()
-                .mapColor(mapColor)
-                .sound(SoundType.STONE)
-                .instrument(NoteBlockInstrument.BASEDRUM)
-                .requiresCorrectToolForDrops()
-                .strength(1.5F, 6.0F);
-    }
-    private static BlockBehaviour.Properties calciteStoneProperties(MapColor mapColor) {
-        return BlockBehaviour.Properties.of()
-                .mapColor(mapColor)
-                .sound(SoundType.CALCITE)
-                .instrument(NoteBlockInstrument.BASEDRUM)
-                .requiresCorrectToolForDrops()
-                .strength(0.75F);
-    }
 
     private static <T extends Block> DeferredBlock<T> registerWallBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = WALL.register(name, block);

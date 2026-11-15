@@ -1,13 +1,12 @@
 package com.degroni.everything_deco.client;
 
 import com.degroni.everything_deco.EverythingDeco;
-import com.degroni.everything_deco.common.block.*;
+import com.degroni.everything_deco.common.block.registry.*;
 import com.degroni.everything_deco.common.item.EDModItems;
 import com.degroni.everything_deco.common.util.EverythingDecoCreativeTabs;
 import de.Roboter007.moderntabs.ModernTabs;
 import de.Roboter007.moderntabs.section.item.SectionedItems;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.Blocks;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;

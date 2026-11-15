@@ -1,10 +1,10 @@
 package com.degroni.everything_deco.common.datagen.dataprovider;
 
 import com.degroni.everything_deco.EverythingDeco;
-import com.degroni.everything_deco.common.block.EDBuildingBlocks;
-import com.degroni.everything_deco.common.block.EDNaturalBlocks;
-import com.degroni.everything_deco.common.block.EDStoneBlocks;
-import com.degroni.everything_deco.common.block.EDWalls;
+import com.degroni.everything_deco.common.block.registry.EDBuildingBlocks;
+import com.degroni.everything_deco.common.block.registry.EDNaturalBlocks;
+import com.degroni.everything_deco.common.block.registry.EDStoneBlocks;
+import com.degroni.everything_deco.common.block.registry.EDWalls;
 import com.degroni.everything_deco.common.item.EDModItems;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
@@ -42,6 +42,7 @@ public class EDItemModelProvider extends ItemModelProvider {
         vanillaTextureWallItem(EDWalls.STRIPPED_SMALL_MANGROVE_LOG, Blocks.STRIPPED_MANGROVE_LOG);
         vanillaTextureWallItem(EDWalls.STRIPPED_SMALL_CHERRY_LOG, Blocks.STRIPPED_CHERRY_LOG);
 
+        wallItem(EDWalls.BLACKSTONE_BRICKS_WALL, EDBuildingBlocks.BLACKSTONE_BRICKS);
         wallItem(EDWalls.RIVERSTONE_WALL, EDStoneBlocks.RIVERSTONE);
         wallItem(EDWalls.DARK_RIVERSTONE_WALL, EDStoneBlocks.DARK_RIVERSTONE);
         wallItem(EDWalls.WETSTONE_WALL, EDStoneBlocks.WETSTONE);

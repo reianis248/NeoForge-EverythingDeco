@@ -1,6 +1,6 @@
 package com.degroni.everything_deco.common.event;
 
-import com.degroni.everything_deco.common.block.EDNaturalBlocks;
+import com.degroni.everything_deco.common.block.registry.EDNaturalBlocks;
 import com.degroni.everything_deco.common.block.helper.EDMudBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
@@ -9,7 +9,6 @@ import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;

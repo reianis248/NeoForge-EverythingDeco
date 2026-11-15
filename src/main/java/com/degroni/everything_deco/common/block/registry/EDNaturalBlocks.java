@@ -1,4 +1,4 @@
-package com.degroni.everything_deco.common.block;
+package com.degroni.everything_deco.common.block.registry;
 
 import com.degroni.everything_deco.EverythingDeco;
 import com.degroni.everything_deco.common.block.helper.EDMudBlock;
@@ -19,6 +19,9 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
+
+import static com.degroni.everything_deco.common.block.properties.EDBlockProperties.mudProperties;
+import static com.degroni.everything_deco.common.block.properties.EDBlockProperties.nyliumProperties;
 
 public class EDNaturalBlocks {
     public static final DeferredRegister.Blocks NATURALBLOCK = DeferredRegister.createBlocks(EverythingDeco.MOD_ID);
@@ -60,7 +63,8 @@ public class EDNaturalBlocks {
     public static final DeferredBlock<Block> LIGHT_MUD = registerBlock("light_mud",
             () -> new EDMudBlock(mudProperties(MapColor.COLOR_BROWN), MUD));
     public static final DeferredBlock<Block> BLANCHED_NYLIUM = registerBlock("blanched_nylium",
-            () -> new NyliumBlock(nyliumProperties(MapColor.COLOR_CYAN)));
+            () -> new NyliumBlock(nyliumProperties()));
+
     public static final DeferredBlock<Block> TIN_ORE = registerBlock("tin_ore",
             () -> new DropExperienceBlock(ConstantInt.of(0),
                     BlockBehaviour.Properties.of()
@@ -77,26 +81,6 @@ public class EDNaturalBlocks {
                             .strength(4.2F, 4.2F)));
 
 
-    private static BlockBehaviour.Properties mudProperties(MapColor mapColor) {
-        return BlockBehaviour.Properties.of()
-                .mapColor(mapColor)
-                .strength(0.5F, 0.5F)
-                .sound(SoundType.MUD)
-                .isValidSpawn(EDNaturalBlocks::always)
-                .isRedstoneConductor(EDNaturalBlocks::always)
-                .isViewBlocking(EDNaturalBlocks::always)
-                .isSuffocating(EDNaturalBlocks::always);
-    }
-    private static BlockBehaviour.Properties nyliumProperties(MapColor mapColor) {
-        return BlockBehaviour.Properties.of()
-                .mapColor(mapColor)
-                .instrument(NoteBlockInstrument.BASEDRUM)
-                .requiresCorrectToolForDrops()
-                .strength(0.4F)
-                .sound(SoundType.NYLIUM)
-                .randomTicks();
-    }
-
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = NATURALBLOCK.register(name, block);
         registerBlockItem(name, toReturn);
@@ -111,7 +95,7 @@ public class EDNaturalBlocks {
         return true;
     }
 
-    private static boolean always(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, EntityType<?> entityType) {
+    public static boolean always(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, EntityType<?> entityType) {
         return true;
     }
 

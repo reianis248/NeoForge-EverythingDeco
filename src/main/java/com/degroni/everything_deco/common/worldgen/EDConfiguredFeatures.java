@@ -1,7 +1,7 @@
 package com.degroni.everything_deco.common.worldgen;
 
 import com.degroni.everything_deco.EverythingDeco;
-import com.degroni.everything_deco.common.block.EDNaturalBlocks;
+import com.degroni.everything_deco.common.block.registry.EDNaturalBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;

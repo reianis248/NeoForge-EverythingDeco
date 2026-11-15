@@ -1,8 +1,12 @@
 package com.degroni.everything_deco;
 
-import com.degroni.everything_deco.common.block.*;
+import com.degroni.everything_deco.common.block.registry.*;
 import com.degroni.everything_deco.common.item.EDModItems;
 import com.degroni.everything_deco.common.util.EverythingDecoCreativeTabs;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.Items;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -53,10 +57,15 @@ public class EverythingDeco {
     }
 
     // Add the example block item to the building blocks tab
-//    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-//        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-//        }
-//    }
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.insertAfter(
+                    Items.DEEPSLATE_BRICKS.getDefaultInstance(),
+                    EDBuildingBlocks.BLACKSTONE_BRICKS.get().asItem().getDefaultInstance(),
+                    CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS
+            );
+        }
+    }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent

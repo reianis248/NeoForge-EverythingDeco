@@ -1,6 +1,6 @@
 package com.degroni.everything_deco.common.datagen.dataprovider;
 
-import com.degroni.everything_deco.common.block.*;
+import com.degroni.everything_deco.common.block.registry.*;
 import com.degroni.everything_deco.common.item.EDModItems;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;

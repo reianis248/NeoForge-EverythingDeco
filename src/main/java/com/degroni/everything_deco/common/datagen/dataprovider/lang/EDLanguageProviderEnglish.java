@@ -1,7 +1,7 @@
 package com.degroni.everything_deco.common.datagen.dataprovider.lang;
 
 import com.degroni.everything_deco.EverythingDeco;
-import com.degroni.everything_deco.common.block.*;
+import com.degroni.everything_deco.common.block.registry.*;
 import com.degroni.everything_deco.common.item.EDModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Blocks;

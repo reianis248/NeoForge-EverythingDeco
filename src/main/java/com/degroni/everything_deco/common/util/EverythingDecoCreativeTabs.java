@@ -1,7 +1,7 @@
 package com.degroni.everything_deco.common.util;
 
 import com.degroni.everything_deco.EverythingDeco;
-import com.degroni.everything_deco.common.block.*;
+import com.degroni.everything_deco.common.block.registry.*;
 import com.degroni.everything_deco.common.item.EDModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;

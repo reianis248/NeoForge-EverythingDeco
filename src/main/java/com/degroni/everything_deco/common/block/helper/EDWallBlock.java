@@ -1,6 +1,6 @@
 package com.degroni.everything_deco.common.block.helper;
 
-import com.degroni.everything_deco.common.block.EDWalls;
+import com.degroni.everything_deco.common.block.registry.EDWalls;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableMap.Builder;
 import com.mojang.serialization.MapCodec;

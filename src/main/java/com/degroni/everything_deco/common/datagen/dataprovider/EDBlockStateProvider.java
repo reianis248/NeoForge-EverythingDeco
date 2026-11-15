@@ -1,8 +1,8 @@
 package com.degroni.everything_deco.common.datagen.dataprovider;
 
 import com.degroni.everything_deco.EverythingDeco;
-import com.degroni.everything_deco.common.block.*;
 import com.degroni.everything_deco.common.block.helper.EDWallBlock;
+import com.degroni.everything_deco.common.block.registry.*;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
@@ -56,6 +56,13 @@ public class EDBlockStateProvider extends BlockStateProvider {
         blockItem(EDMetalBlocks.CUT_BRONZE_SLAB);
         blockWithItem(EDMetalBlocks.CHISELED_BRONZE);
 
+
+        blockWithItem(EDBuildingBlocks.BLACKSTONE_BRICKS);
+        stairsBlock(EDBuildingBlocks.BLACKSTONE_BRICKS_STAIRS.get(), blockTexture(EDBuildingBlocks.BLACKSTONE_BRICKS.get()));
+        slabBlock(EDBuildingBlocks.BLACKSTONE_BRICKS_SLAB.get(), blockTexture(EDBuildingBlocks.BLACKSTONE_BRICKS.get()), blockTexture(EDBuildingBlocks.BLACKSTONE_BRICKS.get()));
+        setTwoCustomWallBlock(EDWalls.BLACKSTONE_BRICKS_WALL.get(), blockTexture(EDBuildingBlocks.BLACKSTONE_BRICKS.get()));
+        blockItem(EDBuildingBlocks.BLACKSTONE_BRICKS_STAIRS);
+        blockItem(EDBuildingBlocks.BLACKSTONE_BRICKS_SLAB);
 
         blockWithItem(EDStoneBlocks.RIVERSTONE);
         stairsBlock(EDBuildingBlocks.RIVERSTONE_STAIRS.get(), blockTexture(EDStoneBlocks.RIVERSTONE.get()));
